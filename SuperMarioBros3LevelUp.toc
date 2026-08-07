@@ -3,6 +3,8 @@
 ## Title:  |cff8d4816Super Mario Bros. 3|r Level Up|cff8d4816!|r
 ## IconTexture: Interface\AddOns\SuperMarioBros3LevelUp\media\icon
 ## Author: DonnieDice
+## Category: RGX
+## Group: RGX
 ## SavedVariables: SMB3LUSettings
 ## RequiredDeps: RGX-Framework
 ## Notes:  Play a Super Mario Bros. 3-inspired level-up sound!  |n|r  |cff8d4816/smb3lu -|r Open help  |n|r   |cff8d4816By DonnieDice|r
