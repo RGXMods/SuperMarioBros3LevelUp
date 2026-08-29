@@ -8,7 +8,7 @@
 
 ## <span style="color: #c24e37;">🎯 Overview</span>
 
-**<span style="color: #8b4b5c;">R</span><span style="color: #8b4b5c;">G</span><span style="color: #8b4b5c;">X</span> <span style="color: #fff;">| </span> <span style="color: #c24e37;">S</span><span style="color: #ffffff;">uper </span><span style="color: #c24e37;">M</span><span style="color: #ffffff;">ario </span><span style="color: #c24e37;">B</span><span style="color: #ffffff;">ros 3 </span><span style="color: #c24e37;">L</span><span style="color: #ffffff;">evel-</span><span style="color: #c24e37;">U</span><span style="color: #ffffff;">p</span><span style="color: #c24e37;">!</span>** <span style="color: #e67e23;">brings the iconic Super Mario Bros. 3 "POWER UP!" chime to</span> <span style="color: #06c;">World of Warcraft</span><span style="color: #e67e23;">, replacing the default sound with a nostalgic achievement moment across supported WoW versions.</span>
+**Super Mario Bros. 3 Level-Up! (SMB3LU)** replaces World of Warcraft's configured default level-up sound with a Super Mario Bros. 3-inspired "POWER UP!" chime whenever the player gains a level. It is a small, automatic sound addon built on RGX-Framework.
 
 ![RealmGX Kiwi](media/kiwi.gif) **<span style="color: #2dc26b;">The Kiwi Says:</span>** <span style="color: #b96ad9;">"It's-a me! Bwwiiiee."</span>
 
@@ -16,33 +16,101 @@
 
 ## <span style="color: #c24e37;">⚠️ Deprecation Notice</span>
 
-<span style="color: #ff6b6b;">**This addon is no longer receiving updates.**</span> <span style="color: #e67e23;">The functionality has been merged into</span> <span style="color: #4ecdc4;">[BLU | Better Level Up!](https://www.curseforge.com/wow/addons/blu-better-level-up)</span> <span style="color: #e67e23;">and</span> <span style="color: #4ecdc4;">[BLU Classic | Better Level Up!](https://www.curseforge.com/wow/addons/blu-classic)</span><span style="color: #e67e23;">. These master sound addons include this sound plus many others in one convenient package!</span>
+<span style="color: #ff6b6b;">**This addon is no longer receiving updates.**</span> Its functionality and Super Mario Bros. 3 sound are available in [BLU | Better Level Up!](https://www.curseforge.com/wow/addons/blu-better-level-up) and [BLU Classic | Better Level Up!](https://www.curseforge.com/wow/addons/blu-classic), which combine this sound with a larger sound collection.
+
+Existing standalone users may continue to use this repository as-is, but new installations should prefer the appropriate BLU addon.
 
 ***
 
-## <span style="color: #c24e37;">🎮 Compatibility</span>
+## <span style="color: #c24e37;">✨ Behavior and Features</span>
 
-<span style="color: #2dc26b;"><strong>Retail</strong></span> <span style="color: #3598db;">|</span> <span style="color: #2dc26b;">✅ Supported</span>
+- Plays the selected Super Mario Bros. 3-inspired sound on `PLAYER_LEVEL_UP`.
+- Provides high, medium, and low OGG variants; medium is selected by default.
+- Plays through the Master sound channel by default.
+- Requests that RGX-Framework mute the configured default level-up sound while SMB3LU is enabled.
+- Persists enablement and sound-variant choices in `SMB3LUSettings`.
+- Shows a welcome message on login while that saved preference remains enabled.
+- Includes a test command for checking playback immediately.
 
-<span style="color: #4ecdc4;"><strong>Wrath Classic</strong></span> <span style="color: #3598db;">|</span> <span style="color: #4ecdc4;">✅ Supported</span>
+SMB3LU does not alter leveling, experience gains, UI frames, or game data. It only handles the sound associated with the player's level-up event.
 
-<span style="color: #ff6b6b;"><strong>Burning Crusade Classic</strong></span> <span style="color: #3598db;">|</span> <span style="color: #ff6b6b;">✅ Supported</span>
+***
 
-<span style="color: #c24e37;"><strong>Classic Era</strong></span> <span style="color: #3598db;">|</span> <span style="color: #c24e37;">✅ Supported</span>
+## <span style="color: #c24e37;">🎮 Requirements and Compatibility</span>
+
+`RGX-Framework` is a required dependency and must be installed and enabled. The current TOCs declare these game interfaces:
+
+| WoW flavor | TOC | Interface |
+|---|---|---:|
+| Retail | `SuperMarioBros3LevelUp.toc` | `120007` |
+| Wrath Classic | `SuperMarioBros3LevelUp_Wrath.toc` | `30403` |
+| Burning Crusade Classic | `SuperMarioBros3LevelUp_TBC.toc` | `20504` |
+| Classic Era | `SuperMarioBros3LevelUp_Vanilla.toc` | `11500` |
+
+These values describe the preserved release metadata. The addon is deprecated, so they are not a promise of compatibility with later game clients.
 
 ***
 
 ## <span style="color: #c24e37;">📥 Installation</span>
 
-1.  **<span style="color: #2dc26b;">Download</span>** <span style="color: #c24e37;">SMB3LU</span> <span style="color: #e67e23;">from your preferred platform.</span>
-2.  **<span style="color: #4ecdc4;">Extract</span>** <span style="color: #e67e23;">the folder to your WoW `Interface/AddOns` directory.</span>
-3.  **<span style="color: #b96ad9;">Restart</span>** <span style="color: #06c;">WoW</span> <span style="color: #e67e23;">and enable the addon.</span>
+1. Download a packaged release of SuperMarioBros3LevelUp and install RGX-Framework.
+2. Extract both addon folders into the WoW client's `Interface/AddOns` directory.
+3. Confirm that the folder is named `SuperMarioBros3LevelUp` rather than a source-archive name.
+4. Enable `RGX-Framework` and `Super Mario Bros. 3 Level-Up!` at the character-selection AddOns screen.
+
+For the consolidated replacement, install BLU or BLU Classic instead of the standalone addon.
 
 ***
 
-## <span style="color: #c24e37;">💝 Support the Project</span>
+## <span style="color: #c24e37;">⌨️ Usage and Configuration</span>
 
-<span style="color: #e67e23;">Love SMB3LU? Support development through GitHub, Buy Me a Coffee, or CashApp and help power more RGX Mods releases.</span>
+SMB3LU works automatically once enabled. It has no graphical configuration panel; use `/smb3lu` commands in chat:
+
+| Command | Result |
+|---|---|
+| `/smb3lu` or `/smb3lu help` | List available commands. |
+| `/smb3lu test` | Play the selected sound variant. |
+| `/smb3lu enable` | Enable replacement playback. |
+| `/smb3lu disable` | Disable replacement playback. |
+| `/smb3lu high` | Select the high-quality file. |
+| `/smb3lu med` or `/smb3lu medium` | Select the medium-quality file. |
+| `/smb3lu low` | Select the low-quality file. |
+
+The initial defaults are enabled, medium quality, Master-channel playback, default-sound muting, and the welcome message. Settings persist between sessions in `SMB3LUSettings`.
+
+***
+
+## <span style="color: #c24e37;">🧩 Files and Runtime</span>
+
+- `data/locales.lua` defines chat and welcome text.
+- `data/core.lua` registers the sound set, events, saved settings, and `/smb3lu` command.
+- `sounds/super_mario_bros_3_{high,med,low}.ogg` are the active playback files.
+- `media/icon.tga`, `media/logo.png`, and `media/kiwi.gif` provide addon and project artwork.
+
+At addon load, SMB3LU initializes its RGX-Framework sound handle. At login it displays the optional welcome message. Each later `PLAYER_LEVEL_UP` event plays the selected variant when the addon is enabled, and logout allows the framework handle to finalize its state.
+
+***
+
+## <span style="color: #c24e37;">🛠️ Troubleshooting</span>
+
+- If WoW marks SMB3LU as missing a dependency, install or enable `RGX-Framework`.
+- If no custom sound plays, run `/smb3lu test`, then `/smb3lu enable` and select a variant again.
+- If the default sound also plays, verify that SMB3LU and RGX-Framework both loaded without Lua errors.
+- If WoW cannot find the addon, verify the exact `Interface/AddOns/SuperMarioBros3LevelUp` folder name.
+
+Because the standalone project is retired, migrate to BLU or BLU Classic when you prefer the consolidated sound addon.
+
+***
+
+## <span style="color: #c24e37;">🔗 Project Links</span>
+
+- [Repository](https://github.com/RGXMods/SuperMarioBros3LevelUp)
+- [Releases](https://github.com/RGXMods/SuperMarioBros3LevelUp/releases)
+- [Issues](https://github.com/RGXMods/SuperMarioBros3LevelUp/issues)
+- [Author: DonnieDice](https://github.com/donniedice)
+- [Support development](https://www.buymeacoffee.com/donniedice)
+
+This repository is retained for existing users and historical context. Issue reports and contributions should account for the deprecation notice and the migration path above.
 
 ***
 
