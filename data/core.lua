@@ -9,7 +9,7 @@ local RGX = assert(_G.RGXFramework, "SMB3LU: RGX-Framework not loaded")
 
 SMB3LU = SMB3LU or {}
 
-local ADDON_VERSION = "2.0.2"
+local ADDON_VERSION = "2.0.4"
 local ADDON_NAME = "SuperMarioBros3LevelUp"
 local PREFIX = "|Tinterface/addons/SuperMarioBros3LevelUp/media/icon:16:16|t - |cffffffff[|r|cffc24e37SMB3LU|r|cffffffff]|r "
 local TITLE = "|Tinterface/addons/SuperMarioBros3LevelUp/media/icon:18:18|t [|cffc24e37S|r|cffffffffuper Mario Bros. 3|r |cffc24e37L|r|cffffffffevel|r |cffc24e37U|r|cffc24e37p|r|cffc24e37!|r]"
