@@ -51,6 +51,12 @@ These values describe the preserved release metadata. The addon is deprecated, s
 
 ***
 
+## <span style="color: #c24e37;">🌍 Language Support</span>
+
+SMB3LU ships complete in-game text for all 12 WoW client locales: **enUS** (base), **deDE**, **esES**, **esMX**, **frFR**, **itIT**, **koKR**, **ptBR**, **ptPT**, **ruRU**, **zhCN**, and **zhTW**. Chat output, command feedback, and the login welcome message are translated for each locale, and every `## X-Localizations` entry in the shipped TOCs lists exactly this set. Clients in any other or unmatched locale fall back to the enUS strings without errors.
+
+***
+
 ## <span style="color: #c24e37;">📥 Installation</span>
 
 1. Download a packaged release of SuperMarioBros3LevelUp and install RGX-Framework.
