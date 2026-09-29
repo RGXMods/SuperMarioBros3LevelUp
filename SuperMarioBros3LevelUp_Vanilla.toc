@@ -10,6 +10,7 @@
 ## Notes:  Play a Super Mario Bros. 3-inspired level-up sound!  |n|r  |cff8d4816/smb3lu -|r Open help  |n|r   |cff8d4816By DonnieDice|r
 
 ## X-Category: UI Media, Questing & Leveling, Audio & Video, Miscellaneous
+## X-Localizations: enUS, deDE, esES, esMX, frFR, itIT, koKR, ptBR, ptPT, ruRU, zhCN, zhTW
 ## X-Website: https://github.com/RGXMods/SuperMarioBros3LevelUp
 ## X-Curse-Project-ID: 594143
 ## X-Wago-ID: pkNMrj6z
