@@ -1,4 +1,4 @@
-﻿## Interface: 50504
+## Interface: 50504
 ## Version: 2.0.4
 ## Title:  |cff8d4816Super Mario Bros. 3|r Level Up|cff8d4816!|r
 ## IconTexture: Interface\AddOns\SuperMarioBros3LevelUp\media\icon.tga
