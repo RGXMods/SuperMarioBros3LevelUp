@@ -1,4 +1,4 @@
-# <span style="color: #c24e37;">🔷 </span> <span style="color: #8b4b5c;">R</span><span style="color: #8b4b5c;">G</span><span style="color: #8b4b5c;">X</span> <span style="color: #c24e37;">| </span> <span style="color: #c24e37;">S</span><span style="color: #ffffff;">uper </span><span style="color: #c24e37;">M</span><span style="color: #ffffff;">ario </span><span style="color: #c24e37;">B</span><span style="color: #ffffff;">ros 3 </span><span style="color: #c24e37;">L</span><span style="color: #ffffff;">evel-</span><span style="color: #c24e37;">U</span><span style="color: #ffffff;">p</span><span style="color: #c24e37;">!</span>
+# <span style="color: #c24e37;"></span> <span style="color: #8b4b5c;">R</span><span style="color: #8b4b5c;">G</span><span style="color: #8b4b5c;">X</span> <span style="color: #c24e37;">| </span> <span style="color: #c24e37;">S</span><span style="color: #ffffff;">uper </span><span style="color: #c24e37;">M</span><span style="color: #ffffff;">ario </span><span style="color: #c24e37;">B</span><span style="color: #ffffff;">ros 3 </span><span style="color: #c24e37;">L</span><span style="color: #ffffff;">evel-</span><span style="color: #c24e37;">U</span><span style="color: #ffffff;">p</span><span style="color: #c24e37;">!</span>
 
 ![SMB3LU Logo](media/logo.png)
 
@@ -6,7 +6,7 @@
 
 ***
 
-## <span style="color: #c24e37;">🎯 Overview</span>
+## <span style="color: #c24e37;">Overview</span>
 
 **Super Mario Bros. 3 Level-Up! (SMB3LU)** replaces World of Warcraft's configured default level-up sound with a Super Mario Bros. 3-inspired "POWER UP!" chime whenever the player gains a level. It is a small, automatic sound addon built on RGX-Framework.
 
@@ -14,7 +14,7 @@
 
 ***
 
-## <span style="color: #c24e37;">⚠️ Deprecation Notice</span>
+## <span style="color: #c24e37;">Deprecation Notice</span>
 
 <span style="color: #ff6b6b;">**This addon is no longer receiving updates.**</span> Its functionality and Super Mario Bros. 3 sound are available in [BLU | Better Level Up!](https://www.curseforge.com/wow/addons/blu-better-level-up) and [BLU Classic | Better Level Up!](https://www.curseforge.com/wow/addons/blu-classic), which combine this sound with a larger sound collection.
 
@@ -22,7 +22,7 @@ Existing standalone users may continue to use this repository as-is, but new ins
 
 ***
 
-## <span style="color: #c24e37;">✨ Behavior and Features</span>
+## <span style="color: #c24e37;">Behavior and Features</span>
 
 - Plays the selected Super Mario Bros. 3-inspired sound on `PLAYER_LEVEL_UP`.
 - Provides high, medium, and low OGG variants; medium is selected by default.
@@ -36,7 +36,7 @@ SMB3LU does not alter leveling, experience gains, UI frames, or game data. It on
 
 ***
 
-## <span style="color: #c24e37;">🎮 Requirements and Compatibility</span>
+## <span style="color: #c24e37;">Requirements and Compatibility</span>
 
 `RGX-Framework` is a required dependency and must be installed and enabled. The current TOCs declare these game interfaces:
 
@@ -54,13 +54,13 @@ These values describe the current release metadata. The addon is deprecated, so 
 
 ***
 
-## <span style="color: #c24e37;">🌍 Language Support</span>
+## <span style="color: #c24e37;">Language Support</span>
 
 SMB3LU ships complete in-game text for all 12 WoW client locales: **enUS** (base), **deDE**, **esES**, **esMX**, **frFR**, **itIT**, **koKR**, **ptBR**, **ptPT**, **ruRU**, **zhCN**, and **zhTW**. Chat output, command feedback, and the login welcome message are translated for each locale, and every `## X-Localizations` entry in the shipped TOCs lists exactly this set. Clients in any other or unmatched locale fall back to the enUS strings without errors.
 
 ***
 
-## <span style="color: #c24e37;">📥 Installation</span>
+## <span style="color: #c24e37;">Installation</span>
 
 1. Download a packaged release of SuperMarioBros3LevelUp and install RGX-Framework.
 2. Extract both addon folders into the WoW client's `Interface/AddOns` directory.
@@ -71,7 +71,7 @@ For the consolidated replacement, install BLU or BLU Classic instead of the stan
 
 ***
 
-## <span style="color: #c24e37;">⌨️ Usage and Configuration</span>
+## <span style="color: #c24e37;">⌨Usage and Configuration</span>
 
 SMB3LU works automatically once enabled. It has no graphical configuration panel; use `/smb3lu` commands in chat:
 
@@ -89,7 +89,7 @@ The initial defaults are enabled, medium quality, Master-channel playback, defau
 
 ***
 
-## <span style="color: #c24e37;">🧩 Files and Runtime</span>
+## <span style="color: #c24e37;">Files and Runtime</span>
 
 - `data/locales.lua` defines chat and welcome text.
 - `data/core.lua` registers the sound set, events, saved settings, and `/smb3lu` command.
@@ -100,7 +100,7 @@ At addon load, SMB3LU initializes its RGX-Framework sound handle. At login it di
 
 ***
 
-## <span style="color: #c24e37;">🛠️ Troubleshooting</span>
+## <span style="color: #c24e37;">Troubleshooting</span>
 
 - If WoW marks SMB3LU as missing a dependency, install or enable `RGX-Framework`.
 - If no custom sound plays, run `/smb3lu test`, then `/smb3lu enable` and select a variant again.
@@ -111,7 +111,7 @@ Because the standalone project is retired, migrate to BLU or BLU Classic when yo
 
 ***
 
-## <span style="color: #c24e37;">🔗 Project Links</span>
+## <span style="color: #c24e37;">Project Links</span>
 
 - [Repository](https://github.com/RGXMods/SuperMarioBros3LevelUp)
 - [Releases](https://github.com/RGXMods/SuperMarioBros3LevelUp/releases)
@@ -123,4 +123,4 @@ This repository is retained for existing users and historical context. Issue rep
 
 ***
 
-## <span style="color: #4ecdc4;">🌟 Thank you for choosing </span> <span style="color: #8b4b5c;">R</span><span style="color: #8b4b5c;">G</span><span style="color: #8b4b5c;">X</span> <span style="color: #4ecdc4;">Mods! 🌟</span>
+## <span style="color: #4ecdc4;">Thank you for choosing </span> <span style="color: #8b4b5c;">R</span><span style="color: #8b4b5c;">G</span><span style="color: #8b4b5c;">X</span> <span style="color: #4ecdc4;">Mods! </span>
